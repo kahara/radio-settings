@@ -384,6 +384,38 @@ zones:
     name: Lohja
     A: [ch7]
     B: [ch8]
+  - id: zone5
+    name: DMO V1 CALL
+    A: [ch10]
+    B: [ch11]
+  - id: zone6
+    name: DMO V3
+    A: [ch14]
+    B: [ch15]
+  - id: zone7
+    name: DMO V2
+    A: [ch12]
+    B: [ch13]
+  - id: zone8
+    name: DMO U1 CALL
+    A: [ch16]
+    B: [ch17]
+  - id: zone9
+    name: DMO U2
+    A: [ch18]
+    B: [ch19]
+  - id: zone10
+    name: DMO U3
+    A: [ch20]
+    B: [ch21]
+  - id: zone11
+    name: DMO U4
+    A: [ch22]
+    B: [ch23]
+  - id: zone12
+    name: DMO U5
+    A: [ch24]
+    B: [ch25]
 scanLists:
   - id: scan1
     name: Pasila
