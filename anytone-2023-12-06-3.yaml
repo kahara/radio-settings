@@ -1,0 +1,229 @@
+---
+version: 0.11.2
+settings:
+  introLine1: WELCOM
+  introLine2: ANYTONE
+  micLevel: 2
+  speech: false
+  power: Mid
+  squelch: 2
+  vox: 0
+  tot: 120
+  defaultID: id1
+radioIDs:
+  - dmr: {id: id1, name: Joni, number: 2441530}
+contacts:
+  - dmr: {id: cont1, name: Local, ring: false, type: GroupCall, number: 9}
+  - dmr: {id: cont2, name: Finland, ring: false, type: GroupCall, number: 244}
+  - dmr: {id: cont3, name: FI OH2, ring: false, type: GroupCall, number: 2442}
+  - dmr: {id: cont4, name: FI OH2 QSY, ring: false, type: GroupCall, number: 24420}
+  - dmr: {id: cont5, name: FI OH2 PKS, ring: false, type: GroupCall, number: 24421}
+  - dmr: {id: cont6, name: FI OH2 L-U, ring: false, type: GroupCall, number: 24422}
+  - dmr: {id: cont7, name: FI OH2 I-U, ring: false, type: GroupCall, number: 24423}
+  - dmr: {id: cont8, name: World-wide, ring: false, type: GroupCall, number: 91}
+  - dmr: {id: cont9, name: Europe, ring: false, type: GroupCall, number: 92}
+  - dmr: {id: cont10, name: Nordic, ring: false, type: GroupCall, number: 927}
+  - dmr: {id: cont11, name: Radio Test, ring: false, type: GroupCall, number: 98}
+  - dmr: {id: cont12, name: Parrot, ring: false, type: PrivateCall, number: 244997}
+  - dmr: {id: cont13, name: ARS/RRS/GPS, ring: false, type: PrivateCall, number: 244999}
+  - dmr: {id: cont14, name: TMS, ring: false, type: PrivateCall, number: 244990}
+  - dmr: {id: cont15, name: All Call, ring: false, type: AllCall, number: 16777215}
+groupLists:
+  - {id: grp1, name: OH2, contacts: [cont3, cont4, cont5, cont6, cont7]}
+  - {id: grp2, name: OH, contacts: [cont2]}
+channels:
+  - digital:
+      id: ch1
+      name: OH2DMRH TS1
+      rxFrequency: 434.57499999999999
+      txFrequency: 432.57499999999999
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp2
+      power: Mid
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch2
+      name: OH2DMRH TS2
+      rxFrequency: 434.57499999999999
+      txFrequency: 432.57499999999999
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      power: Mid
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch3
+      name: OH2DMRE TS1
+      rxFrequency: 434.51249999999999
+      txFrequency: 432.51249999999999
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp2
+      power: High
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch4
+      name: OH2DMRE TS2
+      rxFrequency: 434.51249999999999
+      txFrequency: 432.51249999999999
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      power: High
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch5
+      name: OH2RUF TS1
+      rxFrequency: 434.52499999999998
+      txFrequency: 432.52499999999998
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp2
+      power: High
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch6
+      name: OH2RUF TS2
+      rxFrequency: 434.52499999999998
+      txFrequency: 432.52499999999998
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      power: High
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch7
+      name: OH2DMRL TS1
+      rxFrequency: 145.57499999999999
+      txFrequency: 144.97499999999999
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS1
+      radioId: !<!default> ""
+      groupList: grp2
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - digital:
+      id: ch8
+      name: OH2DMRL TS2
+      rxFrequency: 145.57499999999999
+      txFrequency: 144.97499999999999
+      rxOnly: false
+      admit: ColorCode
+      colorCode: 1
+      timeSlot: TS2
+      radioId: !<!default> ""
+      groupList: grp1
+      power: Max
+      timeout: !<!default> ""
+      vox: !<!default> ""
+  - analog:
+      id: ch9
+      name: APRS
+      rxFrequency: 144.80000000000001
+      txFrequency: 144.80000000000001
+      rxOnly: false
+      admit: Always
+      bandwidth: Narrow
+      aprs: aprs1
+      power: Low
+      timeout: !<!default> ""
+      vox: !<!default> ""
+      squelch: !<!default> ""
+zones:
+  - id: zone1
+    name: Pasila
+    A: [ch1]
+    B: [ch2]
+    anytone:
+      hidden: false
+  - id: zone2
+    name: Espoo
+    A: [ch3]
+    B: [ch4]
+  - id: zone3
+    name: Vantaa
+    A: [ch5]
+    B: [ch6]
+  - id: zone4
+    name: Lohja
+    A: [ch7]
+    B: [ch8]
+scanLists:
+  - id: scan1
+    name: Pasila
+    channels: [ch1, ch2]
+positioning:
+  - aprs:
+      id: aprs1
+      name: APRS APAT81
+      period: 1800
+      revert: ch9
+      icon: Jogger
+      message: https://async.fi/
+      destination: APAT81-1
+      source: OH2EWL-7
+      path: [WIDE1-1]
+  - dmr:
+      id: aprs2
+      name: "GPS Sys #1"
+      period: 0
+  - dmr:
+      id: aprs3
+      name: "GPS Sys #2"
+      period: 0
+  - dmr:
+      id: aprs4
+      name: "GPS Sys #3"
+      period: 0
+  - dmr:
+      id: aprs5
+      name: "GPS Sys #4"
+      period: 0
+  - dmr:
+      id: aprs6
+      name: "GPS Sys #5"
+      period: 0
+  - dmr:
+      id: aprs7
+      name: "GPS Sys #6"
+      period: 0
+  - dmr:
+      id: aprs8
+      name: "GPS Sys #7"
+      period: 0
+  - dmr:
+      id: aprs9
+      name: "GPS Sys #8"
+      period: 0
+commercial:
+  encryptionKeys:
+    []
+...
