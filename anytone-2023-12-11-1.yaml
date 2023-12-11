@@ -23,11 +23,12 @@ contacts:
   - dmr: {id: cont8, name: World-wide, ring: false, type: GroupCall, number: 91}
   - dmr: {id: cont9, name: Europe, ring: false, type: GroupCall, number: 92}
   - dmr: {id: cont10, name: Nordic, ring: false, type: GroupCall, number: 927}
-  - dmr: {id: cont11, name: Radio Test, ring: false, type: GroupCall, number: 98}
-  - dmr: {id: cont12, name: Parrot, ring: false, type: PrivateCall, number: 244997}
-  - dmr: {id: cont13, name: ARS/RRS/GPS, ring: false, type: PrivateCall, number: 244999}
-  - dmr: {id: cont14, name: TMS, ring: false, type: PrivateCall, number: 244990}
-  - dmr: {id: cont15, name: All Call, ring: false, type: AllCall, number: 16777215}
+  - dmr: {id: cont11, name: 99 DMO, ring: false, type: GroupCall, number: 99}
+  - dmr: {id: cont12, name: Radio Test, ring: false, type: GroupCall, number: 98}
+  - dmr: {id: cont13, name: Parrot, ring: false, type: PrivateCall, number: 244997}
+  - dmr: {id: cont14, name: ARS/RRS/GPS, ring: false, type: PrivateCall, number: 244999}
+  - dmr: {id: cont15, name: TMS, ring: false, type: PrivateCall, number: 244990}
+  - dmr: {id: cont16, name: All Call, ring: false, type: AllCall, number: 16777215}
 groupLists:
   - {id: grp1, name: OH2, contacts: [cont3, cont4, cont5, cont6, cont7]}
   - {id: grp2, name: OH, contacts: [cont2]}
@@ -159,6 +160,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -172,6 +174,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -185,6 +188,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -198,6 +202,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -211,6 +216,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -224,6 +230,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -237,6 +244,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -250,6 +258,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -263,6 +272,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -276,6 +286,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -289,6 +300,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -302,6 +314,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -315,6 +328,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -328,6 +342,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -341,6 +356,7 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -354,6 +370,7 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
+      contact: cont11
       power: !<!default> ""
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -427,7 +444,7 @@ positioning:
       id: aprs2
       name: "GPS Sys #1"
       period: 1800
-      contact: cont13
+      contact: cont14
   - dmr:
       id: aprs3
       name: "GPS Sys #2"
