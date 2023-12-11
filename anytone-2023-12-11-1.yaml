@@ -42,7 +42,6 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
-      groupList: grp2
       power: Mid
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -56,7 +55,6 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
-      groupList: grp1
       power: Mid
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -70,7 +68,6 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
-      groupList: grp2
       power: High
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -84,7 +81,6 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
-      groupList: grp1
       power: High
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -98,7 +94,6 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
-      groupList: grp2
       power: High
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -112,7 +107,6 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
-      groupList: grp1
       power: High
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -126,7 +120,6 @@ channels:
       colorCode: 1
       timeSlot: TS1
       radioId: !<!default> ""
-      groupList: grp2
       power: Max
       timeout: !<!default> ""
       vox: !<!default> ""
@@ -140,7 +133,6 @@ channels:
       colorCode: 1
       timeSlot: TS2
       radioId: !<!default> ""
-      groupList: grp1
       power: Max
       timeout: !<!default> ""
       vox: !<!default> ""
